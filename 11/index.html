@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="acao.php" method="get" autocomplete="on">
+    <p>
+        <label for="iname">name</label>
+        <input type="text" name="name" id="iname" required maxlength="15" placeholder="name" autocomplete="name">
+    </p>
+    <p>
+        <label for="inumber">number</label>
+        <input type="number" name="number" id="inumber" min="0" max="10" placeholder="numeros" step="0.5" required> <!--placeholder = lugar para por coisas-->
+        <!--step muda a escala de mudança da nota caso queira por 8,5 por exemplo podemos por um step de 0.5 para habilitar a possibilidade de por essa nota '8,5'.-->
+        <!--min and max é usado soment para type "number" maxlength and minlength para letras e numeros que nao seja do type="number"-->
+        <!--coloque required no finalpara requerir o campo-->
+    </p>
+    <p>
+        <label for="imes">mes</label>
+        <input type="month" name="mes" id="imes" value="2020-03">
+    </p>
+    <p>
+        <label for="idia">dia</label>
+        <input type="date" name="dia" id="idia">
+    </p>
+    <p>
+        <label for="itime">hora</label>
+        <input type="time" name="time" id="itime">
+    </p>
+    <input type="submit" value="enviar">
+    <input type="reset" value="reseta"> <!--Reseta todos os campos dentro de form-->
+</form>
+</body>
+</html>
