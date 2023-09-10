@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Formularios sao usados para serem preenchidos-->
+    <!--Pra onde vao os dados ? o formato de envio-->
+    <!-- os mecanismo de busca pede que exista uma ligaçao entre o p e o input que nesse caso nao existe-->
+    <h1>meu primeiro formulario</h1>
+    <form action="acao.php" method="get"> <!--get envia para a url Ou seja o padrao de envio. se coloar post ele nao aparece na url mas mesmo assim e possivel visualizar as mesmas coisas que get.-->
+        <!--O ideal e que tenhamos o name e id nome do objeto e o identificador-->
+        <!--name e mais util para html e php id para java e label-->
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+        <!--SEMPRE relacione o Label ao input  isso relaciona a palavra ao input-->
+        <!--Osdados quando preenchidos vao para barra superior do navegador para url -->
+        <!--Existe varios metodos de envio. o Padrao e envir na url-->
+        <!--Para deixar seguro o site devemosestudar https criptografia de dados por exemplo-->
+        <!--get se usa para pesquisa caso queira realizar uma pesquise e so pode ter 3000bits ou3000 letras.quando e senha ouarquivo sensiveis como foto e senha e post. mas se deve sprender https para aprender proteger dados melhor-->
+    </form>
+</body>
+</html>

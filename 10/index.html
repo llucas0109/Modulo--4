@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="acao.php" method="post" autocomplete="off"><!--sumario de completar off-->
+<!--O id do input deve ter o mesmo nome que esta em for do labal-->
+        <p>
+            <label for="ui"> usuario</label>
+            <input type="text" name="uuui" id="ui" required minlength="5" maxlength="20" size="10" autocomplete="username"> <!--size nos da quantas letras vai mostrar e  minlength e maxlength mostra maximo e o minimo-->
+            <!--Temos o altocomplete que indica coisas especificas quando colacados em input nao mais em form-->
+        </p>
+        <p>
+            <label for="sui"> password</label>
+            <input type="password" name="suuui" id="sui" required minlength="8" placeholder="sombra de indicaçao">  <!---->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        <!--Todo formulario roda um java script observe no caso do required-->
+    </form>
+</body>
+</html>
