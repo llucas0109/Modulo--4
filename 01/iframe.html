@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe{
+            /*As medidas de tamanho em css tem prioridade nais que as de html em tags*/
+            height: 400px;
+            width: 300px;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--iframe é enline-->
+    <!--Alguns navegadores de cellular nao sao compativeis com iframe entao se voce por algo dentro do iframe isso ira aparecer. -->
+    <!--A altura padrao de um iframe é 300x150 mas podemos altere usando height e with-->
+   <!--scolling="yes" mesmo que o conteudo caiba no igrame ele apareceraa barra de rolagem configurado com "no" obriga a nao aparecer-->
+    <h1>Testandousode iframe</h1>
+    <p>acessando site do 
+  
+        <iframe src="https://aminoapps.com/c/rapislife/page/item/not-afraid/rREx_8oiqIL6JGej68JNRBQ8r1qgaQZDXK" frameborder="0"
+        height="500" width="600" scolling="yes" sandbox="sandbox" referrerpolicy="no-referrer">
+            <a href="https://aminoapps.com/c/rapislife/page/item/not-afraid/rREx_8oiqIL6JGej68JNRBQ8r1qgaQZDXK" target="_blank"> o iframe nao funcionaness dispostivo acesse clicando aqui</a>
+        </iframe>
+        <p>
+     para aprender a programar</p>
+     <p>site do <iframe src="google.com" frameborder="0"></iframe></p>
+     <!--Existem sites que tem proteçao como o google para que nao seja acessado por iframes-->
+</body>
+</html>

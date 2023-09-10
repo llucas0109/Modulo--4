@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    display: block;
+    background-color: red;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin: 0px;
+}
+/*Colocamos ::-webkit-scrollbar pq no hrml a barra de rolagem deixa fora de encaixe o hrml e nao tem mais rolagem lateral*/
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+img{
+    width: 100vw;
+}
