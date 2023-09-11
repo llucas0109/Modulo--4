@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="acao.php" method="post">
+       <p>
+        <label for="icor">cor</label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+        <!--Repare que foi aplicado uma cor usando value . value aplica algo-->
+       </p>
+       <p>
+        <label for="ifoto">foto</label>
+        <input type="file" name="foto" id="ifile"> <!-- Quando for usar esse tipo de envio de imagem deve ser usar o method post-->
+       </p>
+       <p>
+        <label for="inivel">nivel</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="10" value="2"> <!--O range vai sair de 1 e vai ate 10 colocando em escala por padrao a escala e 100-->        
+       </p>
+       
+        <p>
+            <input type="submit" name="enviar" value="enviar"> <!--O value aqui tambem da valor ao input-->
+            <input type="reset" name="limpar" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
