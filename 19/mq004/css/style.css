@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*Mobal firts*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*Colocar a borda como fazendo parte doobjeto*/
+}
+html{
+    height: 100vh;
+}
+body{
+    background: black url(../imagens/back-phone.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+main{
+    width: 400px;
+    /*Ta acontecendo uma rolagem lateral eu acho que deve ser tirado a propria barra pq e ela q ta fazendo isso NESSE caso era pq eu aplique lagutra vw no body,.....*/
+
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.557);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.646);
+}
+img{
+    display: block;
+    margin: auto;
+}
+img#cellular{display: block;}
+img#pc{display: none;}
+img#print{display: none;}
+img#tablet{display: none;}
+img#tv{display: none;}
