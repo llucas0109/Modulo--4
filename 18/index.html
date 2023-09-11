@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="" method="get">
+        
+        <h1>Exemplo de formulario</h1>
+        <p>
+            <label for="iidade">Ano de nacimento</label>
+            <input type="number" name="number" id="iidade" min="1700" max="2024" oninput="calcidade()">
+        </p>
+        <p>
+            <label for="ianos">anos</label>
+            <output id="ianos">0</output>
+        </p>
+        <p>
+            <input type="submit" name="enviar" value="enviar">
+            <input type="reset" name="reset" value="reset">
+        </p>
+    </form>
+    <script>
+        function calcidade(){
+            let atual = new Date().getFullYear()
+            ianos.innerHTTML = Number(atual) - Number(iidade.value)
+        }
+    </script>
+</body>
+</html>

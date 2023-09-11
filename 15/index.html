@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+<form action="acao.php" method="get" autocomplete="on">
+    
+    <h1>EXEMPLO DE FORMULARIO</h1>
+        <p>
+            <label for="iest">estado</label>
+            <select name="estado" id="iest">
+                <option value="selecione" selected>--selecione--</option>
+                <optgroup label="regiao sul">
+                    <option value="sc">santa catarina</option>
+                    <option value="pr">parana</option>
+                    <option value="rs">rio grande do sul</option>
+                </optgroup>
+<optgroup label="regiao norte">
+    
+                    <option value="ma">manaus</option>
+                    <option value="to">tocantins</option>
+                    <option value="ma">matogrosso</option>
+</optgroup>
+            </select>    
+        </p>
+        <p>
+            <label for="iprof">profissao</label>
+            <input type="text" name="prof" id="iprof" list="ilista">
+            <datalist id="ilista">
+                <option value="medico">medico</option> <!--O value È o codigo que vai ser enviado caso escolha essa opçao-->                <option value="con">contador</option>
+                <option value="co">coronel</option>
+                <option value="padeiro">padeiro</option>
+            </datalist>
+        </p>
+        <p>
+            <!--Quando voce for usar textarea voce deve usar o method no forme de POST pq todo formulario get tem limite de 3000 letras ja o POST nao.-->
+            <label for="imsm">mensagem</label><br>
+            <textarea name="mensagem" id="imsm" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </p>
+        <p>
+            <input type="submit" name="enviar" value="enviar">
+            <input type="reset" value="reset">
+        </p>
+</form>
+</body>
+</html>
