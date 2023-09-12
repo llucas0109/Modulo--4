@@ -1,5 +1,77 @@
 @charset "UTF-8";
 
-@media print{
-    
+/*Pequenas telas: até 600px
+cellular: 600 até 768px
+tablet: 768 ate 992
+desktop: 992 até 1200
+Telas grandes mais de 1200
+*/
+/*Exemplo de uso : @media screen and (min-width: 600px) and (max-width: 768px) {
+}*/
+/*ESSE conseito de criar o site com base no mibile e ir adaptando para telas maiores se chama mobal firt*/
+@media print{ /*impressao*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url('../imagens/icon-print.png');
+    }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after{
+        content: ' Esse site foi criado por lucas imprima essa pagina:';
+        text-decoration: overline;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    img#cellular{display: none;}
+    img#pc{display: none;}
+    img#print{display: block;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablets*/
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#cellular{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){ /*desktops*/
+    
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    
+    img#cellular{display: none;}
+    img#pc{display: block;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width:1200px){ /*telas grandes*/
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main{
+        width: 700px;
+    }
+    
+    img#cellular{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: block;}
+}
+/*Breaking poin sao tamanhos de tela*/
