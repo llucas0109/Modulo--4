@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{ /*CONFIGURAÇOES PARA TABLET*/
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
+    section#login{
+        width: 80vw;
+        height: 300px;
+    }
+    div#formulario{
+        font-size: 1.1em;
+    }
+    section#login > div#imagem{
+        float: left; /*determina onde a imagem deve aparecer*/
+        width: 30%; /*faz aparecer a imagem com tamanho de 30%*/
+        height: 100%; /*coloca o tamanho de 100% do section#login e aconteceu que acaba retirando o texto.*/
+    }
+    section#login > div#formulario{
+        float: right; /*Determina a posiçao que vai aparecer a div#formulario*/
+        width: 70%; /*coloca o tamnho em 70% da div#login e aconteceu que o texto que nao aparecia mais passou a aparecer*/
+    }
+}
+@media screen and (min-width: 992px){ /*Uma porcaria de espaço pode mudar tudo...*/
+    body{
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
+    section#login{
+        width: 950px; /*lagura que vai ter */
+        height: 400px;
+    }
+    section#login > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: left; /*Flutar acontece que move a imagem para o lado left*/
+        width: 50%;
+    }
+    div#formulario > h1{
+        font-size: 2.0em;
+    }
+    div#formulario > p{
+        font-size: 1.2em;
+    }
+/*TODAS AS TRANSIÇOES DEVEM FICAR NA ULTIMA LINHA*/
+}

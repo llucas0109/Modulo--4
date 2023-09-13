@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Quary</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuary.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!--Tanto no main quanto no bory foram aplicados view port de 100% a cor ficou com o body-->
 <!--a imgem so aparece depois que definimos hiet dela-->
 <body>
-    <main> 
+    <main> <!--Aqui que foi aplicado o vh e vw o body tbm vw vh-->
         <section id="login"> <!--Aqui foi aplicado tamnho e posicionamento do conteudo-->
             <div id="imagem">
-                
+                <!--Aqui vai a imagem-->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -20,8 +22,22 @@
                     Bienvenue en France. <br>
                     Essa é a sua tela de login coloque seu email e sua senha e tenha uma bela experiencia!!
                 </p>
-                <form action="" method="post">
-
+                <form action="" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="text" name="text" id="ilogin" placeholder="Seu email" autocomplete="email" required maxlength="30">
+                        <label for="ilogin"></label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="passaword" id="isenha" placeholder="Coloque sua senha" autocomplete="current-password" minlength="8" maxlength="20"> <!--min e max so serve para number-->
+                        <label for="isenha"></label>
+                        <!--Dependendo do lugar que for colocado o label influensia na sua posiçao-->
+                    </div>
+                    <input type="submit" name="enviar" value="Entrar">
+                    <a href="#" class="botao">Esqueci a senha
+                        <i class="material-icons">mail</i> <!--i de icone dentro escrevemos o nome do icone que queremos importar da internet-->
+                    </a>
                 </form>
             </div>
         </section>
