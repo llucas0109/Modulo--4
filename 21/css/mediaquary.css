@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #painel{
+        width: 75%;
+        height: 310px;
+    }
+    main{
+        background-image: linear-gradient(to bottom, rgb(60, 196, 150), rgb(87, 30, 139)); 
+    }
+    #painel > section{
+        width: 66%;
+        margin-left: 34%;
+    }
+    h1,p{
+        font-size: 110%;
+    }
+    
+    #imagem{
+        position: absolute;
+        background-position: left;
+        width: 35%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+    form > div > input{
+        width: 83%;
+    }
+    input#limpar{
+        width: 97%;
+    }
+    input#enviar{
+        width: 97%;
+    }
+}
+@media screen and (min-width: 992px) {
+    main{
+        background-color: black;
+    }
+    #painel{
+        position: relative;
+        height: 400px;
+        margin: 0px;
+    }
+    #painel > section{
+        width: 50%;
+        margin-left: 0%; /*Margin left tem questar em 0 as configuraçoes de outra tela sematem e tem que serformatadas aqui quando quisermos mudar as coisas de lugar.*/
+    }
+    #imagem{
+        position: absolute;
+        border-radius: 0px 20px 20px 0px;
+        width: 50%;
+        margin-left: 50%;
+        padding-bottom: 0.5px;
+     }
+     form > div{
+        height: 65px;
+        margin-bottom: 5px;
+     }
+     #iman,#ipass{
+        height: 58px;  
+        
+     }
+     h1,p{
+        font-size: 120%;
+    }
+    section > p{
+        padding: 10px;
+    }
+
+}

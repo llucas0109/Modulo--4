@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(107, 26, 183);
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#painel{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    border:  3px solid rgb(48, 15, 79);
+    width: 46%;
+    height: 490px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    margin: 20px;
+}
+
+#imagem {
+    width: 100%;
+    height: 172px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url('../imagens/pexels-marcin-gierbisz-1125212.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h1,p{
+    font-size: 2.4vw;
+}
+p{
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    line-height: 1,3em;
+}
+ h1{
+    text-align: center;
+    margin: 5px 0px 7px 0px
+}
+ form > div{
+    margin: 0px 10px 3px 15px;
+    border-radius: 10px;
+    background-color: rgb(107, 26, 183);
+}
+label{
+    position: relative;
+}
+span{
+    position: absolute;
+    color: white;
+   top: 0px;
+   left: 5px;
+}
+ form > div > input{
+    border: none;
+    border-radius: 6px;
+    width: 83%;
+    height: 40px;
+    margin: 3px 29% 3px 16%;
+    background-color: rgb(189, 240, 232);
+}
+ form > div > input:focus{
+    background-color: rgba(233, 255, 252, 0.998);
+}
+#enviar{
+    background-color: rgb(60, 196, 150);
+    border: 1px solid  rgb(48, 159, 122);
+    color: white;
+} 
+#limpar{
+    border: 1px solid rgb(48, 159, 122);
+    background-color: white;
+}
+.limpar{
+    margin-top: 4px;
+}
+input#enviar, input#limpar{
+    width: 96%;
+    height: 40px;
+    border-radius: 4px;    
+}
+input#enviar:hover, input#limpar:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.194);
+
+}
+input#enviar:hover{
+    background-color: rgb(48, 159, 122);
+}
+input#limpar:hover{
+    background-color: rgb(167, 248, 221);
+}
